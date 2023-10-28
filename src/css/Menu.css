@@ -1,0 +1,62 @@
+/* $sandy-brown-50: #fdf7ef;
+$sandy-brown-100: #faebda;
+$sandy-brown-200: #f5d4b3;
+$sandy-brown-300: #eeb783;
+$sandy-brown-400: #eaa06a;
+$sandy-brown-500: #e1722e;
+$sandy-brown-600: #d25b24;
+$sandy-brown-700: #ae4520;
+$sandy-brown-800: #8b3821;
+$sandy-brown-900: #71311d;
+$sandy-brown-950: #3d170d; */
+
+
+
+
+.Headernav {
+    background-color: #e6e1dc;
+}
+
+.Headernav .Lista{
+    
+    display: flex;
+    flex-direction:row;
+    height: 115px;
+}
+.Headernav .Lista .Item{
+    background-color: #eaa06a;    
+    display: flex;
+}
+
+.Headernav .Lista .Item ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.Headernav .Lista .Item ul li a{
+    
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+
+}
+a :hover{
+    cursor: pointer;
+}
+
+.Headernav .Navlogo {
+    background-color: #eaa06a;    
+    width: 100%;
+    
+}
+
+.Headernav .Lista .Navlogo img{
+    width: 336px;
+    height: 119px;
+    margin-bottom: -109px;
+    margin-left: 8px;
+    margin-top: -129px;
+}
