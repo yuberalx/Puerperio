@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+
 import "../css/FormularioContacto.css";
-// import { transporter } from "../config/mailer";
 
 function FormComentarios(props) {
+
+  const form = useRef()
 
   // let imgAvatar = localStorage.getItem("Avatar-User") || "";
   const nameUser = localStorage.getItem("Name-User") || "";
   const emailUser = localStorage.getItem("Email-User") || "";
   // alert(nameUser)
   const [comentario, setComentario] = useState(false);
-
   const onSubmit = (data) => {
     if (localStorage.getItem("Name-User")) {
       setComentario(true);
+
+      emailjs.sendForm('service_mzthsbs', 'template_ykt8gtl', form.current, 'uXLZi7VvCOkSO9A9z')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
     } else {
       alert("Pleace login");
     }
@@ -29,6 +39,7 @@ function FormComentarios(props) {
   return (
 
     <form
+    ref={form}
       style={{ position: "relative" }}
       className="FormContact"
       onSubmit={handleSubmit(onSubmit)}

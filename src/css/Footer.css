@@ -1,0 +1,12 @@
+footer{
+    background-image: url('../img/p1.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .logo img{
+    width: 100%;
+    max-width: 250px;
+}

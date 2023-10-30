@@ -1,27 +1,20 @@
 import "./App.css";
 import React from "react";
-import ValidateLogin from "./Components/ValidateLogin";
-import FormComentarios from "./Components/FormComentarios";
-import Comentarios from "./Components/Comentarios";
-import Home from "./Components/Menu/Menu";
-import Content from "./Components/Content";
-
-
+import Home from "./Pages/Home";
+import Menu from "./Components/Menu"
+import Footer from "./Components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Content/>
-      <header className="App-header">
-        
-        <Comentarios />
-        <div className="FormComents">
-          <FormComentarios />
-          <ValidateLogin />
-        </div>
-
-      </header>
+    <Router>
+    <Menu />
+        <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+      <Footer/>
+    </Router>
     </div>
   );
 }

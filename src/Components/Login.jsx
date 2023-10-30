@@ -9,6 +9,7 @@ function Login({ setUserLog }) {
         const decodedToken = jwt_decode(credentialResponse.credential);
         setUserLog(true);
 
+        window.location.reload()
         localStorage.setItem("Name-User", decodedToken.name);
         localStorage.setItem("Email-User", decodedToken.email);
         localStorage.setItem("Avatar-User", decodedToken.picture);

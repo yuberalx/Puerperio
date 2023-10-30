@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background-image: url('../img/p0.svg');
+}
+
+main h2 {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+main .Perfil {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main .Perfil img {
+    border-radius: 30px;
+}
+
+main .Perfil .Text {
+    width: 100%;
+    padding: 20px;
+}
+
+main .Perfil .Text p {
+    font-size: 19px;
+    margin-top: 20px;
+    line-height: 25px;
+    color: rgb(74, 74, 74);
+}
+
+main .Video {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #e2c5a6c9;
+    padding: 25px;
+}
+
+main .Video>div {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main .Video .Autor {
+    text-align: right;
+    padding: 10px;
+
+}
+
+main .Autor p:nth-child(2) {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main .Video iframe {
+    width: 100%;
+    height: 550px;
+    opacity: .8;
+}
+
+main .Preguntas {
+    display: flex;
+    padding: 25px;
+}
+
+main .Preguntas .Box-Preguntas {
+    width: 50%;
+
+}
+
+main .Preguntas .Box-Preguntas .Pregunta {
+    background-color: #f7e1ca;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+main .Preguntas .Box-Preguntas .Pregunta p {
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.Chat {
+    background-color: #e2c5a6b7;
+    padding: 20px;
+    border-radius: 51px 0px 51px 0px;
+    margin-bottom: 30px;
+}
+
+.Chat h2 {
+    color: #6b422b;
+}
+
+.Chat>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-size: cover;
+    padding: 25px;
+}
+
+.Chat>div .FormComents {
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 830px) {
+
+    main .Video{
+        padding: 0px;
+    }
+
+    .Chat > div {
+        flex-direction: column;
+    }
+
+    .Chat > div .FormComents {
+        margin: auto;
+    }
+
+    main .Preguntas{
+        flex-direction: column;
+    }
+
+    main .Preguntas .Box-Preguntas{
+        width: 100%;
+    }
+
+    main .Perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Chat {
+        border-radius: 0px;
+    }
+}

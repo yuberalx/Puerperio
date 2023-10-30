@@ -21,7 +21,7 @@ function Comentarios(props) {
       <div className="Comentario">
         <div className="user">
           <img src={imgAvatar} alt="" />
-          <p>claudia lopez</p>
+          <p>Claudia Núñez</p>
         </div>
         <div className="Text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
@@ -33,7 +33,7 @@ function Comentarios(props) {
       <div className="Comentario">
         <div className="user">
           <img src={imgAvatar} alt="" />
-          <p>claudia lopez</p>
+          <p>Monica Ventura</p>
         </div>
         <div className="Text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
